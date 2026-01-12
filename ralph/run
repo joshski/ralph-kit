@@ -1,0 +1,29 @@
+#!/bin/bash
+set -e
+
+MAX_ITERATIONS=${1:-10}
+
+echo "Starting Ralph loop (max $MAX_ITERATIONS iterations)"
+echo ""
+
+for ((i=1; i<=MAX_ITERATIONS; i++)); do
+    # Check if there's work available
+    if [[ -z "$(bd list --status open -n 1 2>/dev/null)" ]]; then
+        echo "No open issues remaining. Exiting loop."
+        break
+    fi
+
+    echo "=========================================="
+    echo "Ralph iteration $i of $MAX_ITERATIONS"
+    echo "=========================================="
+
+    claude -p "Read ./ralph/RALPH.md and get to work" \
+        --dangerously-skip-permissions \
+        --output-format stream-json \
+        --verbose \
+        --include-partial-messages \
+        | node .devcontainer/parse-claude-stream.js
+done
+
+echo ""
+echo "Ralph loop finished after $((i-1)) iteration(s)"

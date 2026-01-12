@@ -1,0 +1,17 @@
+#!/bin/bash
+set -e
+
+echo "Starting devcontainer..."
+devcontainer up --workspace-folder . 2>&1 | grep -E "(outcome|error)" || true
+
+CONTAINER_ID=$(docker ps --filter "label=devcontainer.local_folder=$PWD" --format "{{.ID}}" | head -1)
+
+if [ -z "$CONTAINER_ID" ]; then
+    echo "ERROR: Could not find running devcontainer"
+    exit 1
+fi
+
+echo "Using container: $CONTAINER_ID"
+echo ""
+
+docker exec -it $CONTAINER_ID ./ralph/run "$@"

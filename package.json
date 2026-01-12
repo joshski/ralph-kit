@@ -1,0 +1,32 @@
+{
+  "name": "ralph-kit",
+  "version": "1.0.0",
+  "description": "A starter kit for agent-driven development with ralph and beads.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshski/ralph-kit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/joshski/ralph-kit/issues"
+  },
+  "homepage": "https://github.com/joshski/ralph-kit#readme",
+  "dependencies": {
+    "@types/node": "^25.0.6",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.11",
+    "vitest": "^4.0.16"
+  }
+}

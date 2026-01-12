@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bd onboard:*)",
+      "Bash(bd create:*)",
+      "Bash(bd ready:*)"
+    ]
+  }
+}

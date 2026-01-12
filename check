@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+bunx biome check --write .
+bun test --dots
