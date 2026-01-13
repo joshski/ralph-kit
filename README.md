@@ -23,10 +23,10 @@ bd init
 
 ### Clone your new repo and launch the devcontainer
 
-<img width="1055" height="603" alt="Screenshot 2026-01-13 at 07 32 40" src="https://github.com/user-attachments/assets/62d12f63-5e76-40b9-ac67-66e26dd688f8" />
+Use the [devcontainers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) and CMD+Shift+P to clone the repository in a new container volume.
+<img width="726" height="133" alt="Screenshot 2026-01-13 at 08 56 59" src="https://github.com/user-attachments/assets/1fa94407-cb54-4e44-b678-20fa174045eb" />
 
-In VS Code you can click one of those buttons in the popup dialog:
-<img width="1468" height="891" alt="Screenshot 2026-01-13 at 07 32 59" src="https://github.com/user-attachments/assets/b76820e7-6ace-4275-90da-811648035e45" />
+<img width="666" height="126" alt="Screenshot 2026-01-13 at 08 58 03" src="https://github.com/user-attachments/assets/5d3824c6-1f8d-44d4-ac3e-09fb505c3837" />
 
 ### Use claude code to add some issues to beads
 
@@ -36,7 +36,7 @@ In VS Code you can click one of those buttons in the popup dialog:
 
 <img width="1192" height="690" alt="Screenshot 2026-01-13 at 07 44 47" src="https://github.com/user-attachments/assets/cf38f263-509b-4da8-9ffa-cb9c7da2300e" />
 
-### Run your shiny new app
+### Start your shiny new app
 
 <img width="1181" height="418" alt="Screenshot 2026-01-13 at 08 01 44" src="https://github.com/user-attachments/assets/d51d2d17-e0df-4479-be46-9ff7dd9d87e1" />
 
